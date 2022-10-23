@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url("../images/background.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
 }
 
@@ -79,6 +79,10 @@ a:hover {
   color: black;
 }
 
+.navitems{
+  margin-left: 30px;
+}
+
 #navigation-container {
   position: relative;
   display: flex;
@@ -88,6 +92,16 @@ a:hover {
 
 .logo {
   padding-left: 2%;
+}
+
+.cardmargin{
+  margin-top: 35px;
+  margin-left: 35px;
+}
+
+.video{
+  border-radius: 5px;
+  margin-left: 30px;
 }
 
 .form-bienvenidos {
