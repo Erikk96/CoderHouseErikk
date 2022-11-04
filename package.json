@@ -1,0 +1,23 @@
+{
+  "name": "coderhouseerikk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erikk96/CoderHouseErikk.git"
+  },
+  "author": "Carlos Carmona",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Erikk96/CoderHouseErikk/issues"
+  },
+  "homepage": "https://github.com/Erikk96/CoderHouseErikk#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20",
+    "sass": "^1.55.0"
+  }
+}
