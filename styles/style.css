@@ -413,13 +413,27 @@ body {
     background-size: contain;
   }
 }
-.fondo1 {
-  background-color: #EBE60E;
-  width: 300px;
-  padding: auto;
-  height: auto;
-  display: flex;
+.texto-registrate {
   color: #EBE60E;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+}
+
+.texto-entrada {
+  color: #EBE60E;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.texto-bienvenida {
+  color: #EBE60E;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+
+.texto-rn {
+  color: #EBE60E;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */
