@@ -91,7 +91,7 @@ a:active a:hover {
 }
 
 .logo {
-  padding-left: 2%;
+  padding-left: 5%;
 }
 
 .cardmargin {
@@ -162,8 +162,8 @@ a:active a:hover {
 }
 
 .logoformulario {
-  width: 125px;
-  height: 125px;
+  width: 100px;
+  height: 105px;
   margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
