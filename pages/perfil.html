@@ -12,7 +12,7 @@
     crossorigin="anonymous"></script>
   <title>CLUB DEPORTIVO MALANZAN</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="../styles/estilos.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <link rel="icon" href="../favicon.ico" />
 </head>
 
@@ -20,7 +20,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-dark nav">
       <div class="container-fluid">
-        <img src="../images/logo.png" alt="" class="animate__animated animate__zoomIn" width="100px" height="90">
+        <img src="../images/logo.png" alt="" class="animate__animated animate__zoomIn" width="90" height="90">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,14 +37,34 @@
     </nav>
   </header>
   <main>
-    <ul class="botones-vertical animate__animated animate__zoomIn">
-      <li class="botones_perfil"><a href="edit.html">MI PERFIL</a></li>
-      <li class="botones_perfil"><a href="transmision.html">EN VIVO</a></li>
-      <li class="botones_perfil"><a href="entradas.html">MI ENTRADA</a></li>
-      <li class="botones_perfil"><a href="shops.html">SHOPS</a></li>
-      <li class="botones_perfil"><a href="socio.html">CUOTA SOCIO</a></li>
-    </ul>
-  </main>
+<div class="container">
+  <table class="table tabla-perfil animate__animated animate__zoomIn">
+    <thead>
+      <tr>
+        <th scope="col">19 de Marzo</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">Proximo Partido</th>
+        <td>25 de Septiembre</td>
+      </tr>
+      <tr>
+        <th scope="row">Hora</th>
+        <td>16:00hs</td>
+      </tr>
+      <tr>
+        <th scope="row">Estadio</th>
+        <td colspan="2">Carmona Juan Calos (La Olla)</td>
+      </tr>
+    </tbody>
+  </table>
+  <a href="../pages/edit.html" class="btnverticales animate__animated animate__zoomIn">MI PERFIL</a>
+  <a href="../pages/transmision.html" class="btnverticales animate__animated animate__zoomIn">EN VIVO</a>
+  <a href="../pages/entradas.html" class="btnverticales animate__animated animate__zoomIn">MI ENTRADA</a>
+  <a href="../pages/shops.html" class="btnverticales animate__animated animate__zoomIn">SHOPS</a>
+  <a href="../pages/socio.html" class="btnverticales animate__animated animate__zoomIn">CUOTA SOCIO</a>
+</div>
+</main>
 </body>
-
 </html>

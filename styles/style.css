@@ -55,9 +55,7 @@ li {
   padding-right: 80px;
 }
 
-a,
-a:focus,
-a:active {
+a {
   width: 220px;
   text-decoration: none;
   color: inherit;
@@ -72,9 +70,7 @@ a:active {
   display: flex;
   margin: auto;
 }
-a a:hover,
-a:focus a:hover,
-a:active a:hover {
+a a:hover {
   background-color: rgba(235, 231, 14, 0.6352941176);
   color: black;
 }
@@ -194,22 +190,9 @@ a:active a:hover {
   border-radius: 25px;
 }
 
-.botones-vertical {
-  width: 300px;
-  padding: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.botones-vertical .botones_perfil {
-  width: auto;
-  height: auto;
-  text-align: center;
-  margin: auto;
+.btnverticales {
   margin-top: 50px;
-  margin-bottom: 40px;
-  margin-left: 50px;
-  padding: auto;
+  margin-bottom: 30px;
 }
 
 * {
@@ -232,16 +215,16 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.seccion-perfil-usuario .perfil-usuario-body .seccion-perfil-usuario .perfil-usuario-header,
-.seccion-perfil-usuario .seccion-perfil-usuario .perfil-usuario-header {
+
+.seccion-perfil-usuario .perfil-usuario-header {
   width: 100%;
   display: flex;
   justify-content: center;
   background: linear-gradient(#dcdd8c, transparent);
   margin-bottom: 1.25rem;
 }
-.seccion-perfil-usuario .perfil-usuario-body .seccion-perfil-usuario .perfil-usuario-portada,
-.seccion-perfil-usuario .seccion-perfil-usuario .perfil-usuario-portada {
+
+.seccion-perfil-usuario .perfil-usuario-portada {
   display: block;
   width: 90%;
   height: 17rem;
@@ -260,7 +243,8 @@ body {
   color: #fff;
   cursor: pointer;
 }
-.seccion-perfil-usuario .perfil-usuario-portada .boton-portada .seccion-perfil-usuario .perfil-usuario-portada .boton-portada i {
+
+.seccion-perfil-usuario .perfil-usuario-portada .boton-portada i {
   margin-right: 1rem;
 }
 
@@ -278,11 +262,13 @@ body {
   left: calc(50% - 90px);
   z-index: 1;
 }
-.seccion-perfil-usuario .perfil-usuario-avatar .seccion-perfil-usuario .perfil-usuario-avatar img {
+
+.seccion-perfil-usuario .perfil-usuario-avatar img {
   width: 100%;
   border-radius: 50%;
 }
-.seccion-perfil-usuario .perfil-usuario-avatar .seccion-perfil-usuario .perfil-usuario-avatar .boton-avatar {
+
+.seccion-perfil-usuario .perfil-usuario-avatar .boton-avatar {
   position: absolute;
   left: -2px;
   top: -2px;
@@ -300,13 +286,15 @@ body {
   position: relative;
   max-width: 750px;
 }
-.seccion-perfil-usuario .perfil-usuario-body .seccion-perfil-usuario .perfil-usuario-body .titulo {
+
+.seccion-perfil-usuario .perfil-usuario-body .titulo {
   display: block;
   width: 100%;
   font-size: 1.75em;
   margin-bottom: 0.5rem;
 }
-.seccion-perfil-usuario .perfil-usuario-body .seccion-perfil-usuario .perfil-usuario-body .titulo .seccion-perfil-usuario .perfil-usuario-body .texto {
+
+.seccion-perfil-usuario .perfil-usuario-body .texto {
   color: #848484;
   font-size: 0.95em;
 }
@@ -322,8 +310,8 @@ body {
   border-radius: 15px;
   width: 100%;
 }
-.seccion-perfil-usuario .perfil-usuario-footer .seccion-perfil-usuario .perfil-usuario-bio,
-.seccion-perfil-usuario .perfil-usuario-bio .seccion-perfil-usuario .perfil-usuario-bio {
+
+.seccion-perfil-usuario .perfil-usuario-bio {
   margin-bottom: 1.25rem;
   text-align: center;
 }
@@ -334,10 +322,12 @@ body {
   display: flex;
   flex-direction: column;
 }
-.seccion-perfil-usuario .lista-datos .seccion-perfil-usuario .lista-datos li {
+
+.seccion-perfil-usuario .lista-datos li {
   padding: 5px 0;
 }
-.seccion-perfil-usuario .lista-datos .seccion-perfil-usuario .lista-datos li .seccion-perfil-usuario .lista-datos li > .icono {
+
+.seccion-perfil-usuario .lista-datos li > .icono {
   margin-right: 1rem;
   font-size: 1.2rem;
   vertical-align: middle;
@@ -350,7 +340,8 @@ body {
   display: flex;
   flex-direction: column;
 }
-.seccion-perfil-usuario .redes-sociales .seccion-perfil-usuario .redes-sociales .boton-redes {
+
+.seccion-perfil-usuario .redes-sociales .boton-redes {
   border: 0;
   background-color: #fff;
   text-decoration: none;
@@ -364,7 +355,8 @@ body {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   font-size: 1.3rem;
 }
-.seccion-perfil-usuario .redes-sociales .seccion-perfil-usuario .redes-sociales .boton-redes .seccion-perfil-usuario .redes-sociales .boton-redes + .boton-redes {
+
+.seccion-perfil-usuario .redes-sociales .boton-redes + .boton-redes {
   margin-top: 0.5rem;
 }
 
@@ -434,6 +426,154 @@ body {
   color: #EBE60E;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 17px;
+}
+
+/* Prueba de bostrap */
+.prueba {
+  padding-top: 0rem;
+  padding-bottom: 3rem;
+  color: #050505;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  color: #EBE60E;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+/* rtl:end:ignore */
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -0.05rem;
+}
+
+/* rtl:end:remove */
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+    color: #EBE60E;
+  }
+  .texto-primero {
+    color: #EBE60E;
+  }
+  .texto-secundario {
+    color: #EBE60E;
+  }
+}
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+.contenedor-botones {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabla-perfil {
+  margin-top: 70px;
+  color: #EBE60E;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.table {
+  background-color: #3d414b;
+  background-image: linear-gradient(1deg, #887d1f, #26282c);
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -59,9 +59,7 @@ li {
   padding-right: 80px;
 }
 
-a,
-a:focus,
-a:active {
+a {
   width: 220px;
   text-decoration: none;
   color: inherit;
@@ -75,7 +73,6 @@ a:active {
   border-radius: 20px;
   display: flex;
   margin: auto;
-
   a:hover {
     background-color: #ebe70ea2;
     color: black;
@@ -201,23 +198,9 @@ a:active {
   border-radius: 25px;
 }
 
-.botones-vertical {
-  width: 300px;
-  padding: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-
-  .botones_perfil {
-    width: auto;
-    height: auto;
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    margin-left: 50px;
-    padding: auto;
-  }
+.btnverticales{
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 * {
@@ -240,22 +223,22 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+}
 
-  .seccion-perfil-usuario .perfil-usuario-header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(#dcdd8c, transparent);
-    margin-bottom: 1.25rem;
-  }
+.seccion-perfil-usuario .perfil-usuario-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#dcdd8c, transparent);
+  margin-bottom: 1.25rem;
+}
 
-  .seccion-perfil-usuario .perfil-usuario-portada {
-    display: block;
-    width: 90%;
-    height: 17rem;
-    background-image: linear-gradient(45deg, #d6ca5e, #26282c);
-    border-radius: 0 0 20px 20px;
-  }
+.seccion-perfil-usuario .perfil-usuario-portada {
+  display: block;
+  width: 90%;
+  height: 17rem;
+  background-image: linear-gradient(45deg, #d6ca5e, #26282c);
+  border-radius: 0 0 20px 20px;
 }
 
 .seccion-perfil-usuario .perfil-usuario-portada .boton-portada {
@@ -268,12 +251,11 @@ body {
   background-color: rgba(0, 0, 0, .5);
   color: #fff;
   cursor: pointer;
-
-  .seccion-perfil-usuario .perfil-usuario-portada .boton-portada i {
-    margin-right: 1rem;
-  }
 }
 
+.seccion-perfil-usuario .perfil-usuario-portada .boton-portada i {
+  margin-right: 1rem;
+}
 
 .seccion-perfil-usuario .perfil-usuario-avatar {
   width: 180px;
@@ -284,63 +266,63 @@ body {
   background-color: #DFE5F2;
   border-radius: 50%;
   box-shadow: 0 0 12px rgba(0, 0, 0, .2);
-  position: relative;
+  position:relative;
   bottom: -40px;
   left: calc(50% - 90px);
   z-index: 1;
+}
 
-  .seccion-perfil-usuario .perfil-usuario-avatar img {
-    width: 100%;
-    border-radius: 50%;
-  }
+.seccion-perfil-usuario .perfil-usuario-avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
 
-  .seccion-perfil-usuario .perfil-usuario-avatar .boton-avatar {
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    border: 0;
-    background-color: #fff;
-    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
+.seccion-perfil-usuario .perfil-usuario-avatar .boton-avatar {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border: 0;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .seccion-perfil-usuario .perfil-usuario-body {
   width: 70%;
   position: relative;
   max-width: 750px;
+}
 
-  .seccion-perfil-usuario .perfil-usuario-body .titulo {
-    display: block;
-    width: 100%;
-    font-size: 1.75em;
-    margin-bottom: 0.5rem;
+.seccion-perfil-usuario .perfil-usuario-body .titulo {
+  display: block;
+  width: 100%;
+  font-size: 1.75em;
+  margin-bottom: 0.5rem;
+}
 
-    .seccion-perfil-usuario .perfil-usuario-body .texto {
-      color: #848484;
-      font-size: 0.95em;
-    }
-  }
+.seccion-perfil-usuario .perfil-usuario-body .texto {
+  color: #848484;
+  font-size: 0.95em;
 }
 
 .seccion-perfil-usuario .perfil-usuario-footer,
 .seccion-perfil-usuario .perfil-usuario-bio {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap:nowrap;
   flex-direction: column;
   padding: 1.5rem 2rem;
   box-shadow: 0 0 12px rgba(0, 0, 0, .2);
   background-color: #fff;
   border-radius: 15px;
   width: 100%;
+}
 
-  .seccion-perfil-usuario .perfil-usuario-bio {
-    margin-bottom: 1.25rem;
-    text-align: center;
-  }
+.seccion-perfil-usuario .perfil-usuario-bio {
+  margin-bottom: 1.25rem;
+  text-align: center;
 }
 
 .seccion-perfil-usuario .lista-datos {
@@ -348,16 +330,16 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
+}
 
-  .seccion-perfil-usuario .lista-datos li {
-    padding: 5px 0;
+.seccion-perfil-usuario .lista-datos li {
+  padding: 5px 0;
+}
 
-    .seccion-perfil-usuario .lista-datos li>.icono {
-      margin-right: 1rem;
-      font-size: 1.2rem;
-      vertical-align: middle;
-    }
-  }
+.seccion-perfil-usuario .lista-datos li>.icono {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  vertical-align: middle;
 }
 
 .seccion-perfil-usuario .redes-sociales {
@@ -366,25 +348,25 @@ body {
   top: 0;
   display: flex;
   flex-direction: column;
+}
 
-  .seccion-perfil-usuario .redes-sociales .boton-redes {
-    border: 0;
-    background-color: #fff;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: #fff;
-    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
-    font-size: 1.3rem;
+.seccion-perfil-usuario .redes-sociales .boton-redes {
+  border: 0;
+  background-color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+  font-size: 1.3rem;
+}
 
-    .seccion-perfil-usuario .redes-sociales .boton-redes+.boton-redes {
-      margin-top: .5rem;
-    }
-  }
+.seccion-perfil-usuario .redes-sociales .boton-redes+.boton-redes {
+  margin-top: .5rem;
 }
 
 .facebook {
@@ -405,37 +387,38 @@ body {
 
 @media (max-width: 750px) {
   .seccion-perfil-usuario .lista-datos {
-    width: 100%;
+      width: 100%;
   }
 
   .seccion-perfil-usuario .perfil-usuario-portada,
   .seccion-perfil-usuario .perfil-usuario-body {
-    width: 95%;
+      width: 95%;
   }
 
   .seccion-perfil-usuario .redes-sociales {
-    position: relative;
-    flex-direction: row;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    align-items: center;
-    justify-content: center
+      position: relative;
+      flex-direction: row;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      align-items: center;
+      justify-content: center
   }
 
   .seccion-perfil-usuario .redes-sociales .boton-redes+.boton-redes {
-    margin-left: 1rem;
-    margin-top: 0;
+      margin-left: 1rem;
+      margin-top: 0;
   }
 
-  .icon-facebook {
+  .icon-facebook{
     background-image: url("../images/Facebook.png");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat ;
     background-size: contain;
   }
 }
+
 .texto-registrate{
   color: $color-amarillo;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -456,4 +439,165 @@ body {
   color: $color-amarillo;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 17px;
+}
+
+/* Prueba de bostrap */
+.prueba{
+  padding-top: 0rem;
+  padding-bottom: 3rem;
+  color: #050505;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  color: $color-amarillo;
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+    color: $color-amarillo;
+  }
+  .texto-primero{
+    color: $color-amarillo;
+  }
+  .texto-secundario{
+    color: $color-amarillo;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+.contenedor-botones{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.tabla-perfil{
+margin-top:70px;
+color: $color-amarillo;
+font-size: 30px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.table{
+  background-color: #3d414b;
+  background-image: linear-gradient(1deg, #887d1f, #26282c);
+  border-radius: 30px;
 }
